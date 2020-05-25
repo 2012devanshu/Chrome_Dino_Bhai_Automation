@@ -4,7 +4,7 @@ import time
 
 def hit(key):
     pag.keyDown(key)
-    return
+    return True
 
 
 def check(data):
@@ -12,13 +12,13 @@ def check(data):
             for j in range(440,459):
                 if data[i,j] < 100:
                     hit('up')
-                    return
+                    return True
     for i in range(245,400):
             for j in range(160,370):
                 if data[i,j] < 100:
                     hit('down')
-                    return
-    return 
+                    return True
+    return Flase
 
 if __name__ == "__main__":
     time.sleep(3)
