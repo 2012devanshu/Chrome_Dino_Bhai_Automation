@@ -18,7 +18,7 @@ def check(data):
                 if data[i,j] < 100:
                     hit('down')
                     return True
-    return Flase
+    return False
 
 if __name__ == "__main__":
     time.sleep(3)
